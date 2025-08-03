@@ -5,6 +5,55 @@ body {
     color: #333;
     scroll-behavior: smooth;
 }
+
+/* ========================
+   COOKIE BANNER
+======================== */
+#cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    align-items: center;
+    justify-content: center;
+    padding: 15px 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    z-index: 9999; /* molto sopra tutto il resto */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    transform: translateY(100%);
+}
+
+#cookie-banner.show {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#cookie-banner p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+#cookie-banner a {
+    color: #4fc3f7;
+    text-decoration: underline;
+    margin-left: 10px;
+}
+
+#cookie-banner button {
+    background: #4fc3f7;
+    color: #000;
+    border: none;
+    padding: 8px 12px;
+    margin-left: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
 /* Navbar */
 .navbar {
     position: fixed;
@@ -540,4 +589,45 @@ footer {
     font-size: 0.9rem;
     font-family: 'Poppins', sans-serif;
     letter-spacing: 0.02em;
+}
+
+footer a {
+    color: #111;
+    text-decoration: none;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+
+footer a:hover,
+footer a:focus {
+    color: #111; /* cambia colore al passaggio del mouse */
+    text-decoration: underline;
+    outline: none;
+}
+
+/* === Responsive === */
+@media (max-width: 1024px) {
+    .riga {
+        flex-direction: column;
+    }
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
+
+.privacy-consent {
+    display: block;
+    font-size: 0.9rem;
+    margin: 1rem 0;
+    color: #00303f;
+}
+
+.privacy-consent input[type="checkbox"] {
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+.privacy-consent a {
+    color: white;
+    text-decoration: underline;
 }
