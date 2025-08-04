@@ -1,7 +1,7 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f5f5f5;
+    background-color: #000000;
     color: #333;
     scroll-behavior: smooth;
 }
@@ -73,7 +73,7 @@ body {
 }
 
 .navbar.scrolled {
-    background-color: #1abc9c;
+    background-color: #000000;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -85,7 +85,7 @@ body {
     gap: 1rem;
 }
 .nav-links a {
-    color: white;
+    color: darkgoldenrod;
     text-decoration: none;
     font-weight: 600;
 }
@@ -96,7 +96,7 @@ body {
     display: none;
     font-size: 2rem;
     cursor: pointer;
-    color: white;
+    color: darkgoldenrod;
 }
 /* Hamburger menu icon */
 .menu-toggle {
@@ -189,7 +189,7 @@ body {
     padding: 0.8rem 1.8rem;
     font-size: 1rem;
     font-weight: 600;
-    background: #e67e22;
+    background: darkgoldenrod;
     color: white;
     border-radius: 30px;
     text-decoration: none;
@@ -197,7 +197,7 @@ body {
 }
 
 .cta-hero a:hover {
-    background: #cf711b;
+    background: darkgoldenrod;
     transform: translateY(-2px);
 }
 
@@ -239,7 +239,7 @@ body {
 }
 
 .hero-wave path {
-    fill: #f5f5f5;
+    fill: #000000;
 }
 
 
@@ -255,14 +255,14 @@ body {
 }
 
 .servizi-section {
-    background-color: #FDF5E6;
+    background-color: #000000;
     padding: 4rem 1.5rem;
 }
 
 .section-title {
     text-align: center;
     font-size: 2.5rem;
-    color: #4b1e1e;
+    color: darkgoldenrod;
     margin-bottom: 3rem;
 }
 
@@ -295,13 +295,13 @@ body {
 }
 
 .servizio-testo h3 {
-    color: #4b1e1e;
+    color: darkgoldenrod;
     font-size: 1.8rem;
     margin-bottom: 0.5rem;
 }
 
 .servizio-testo p {
-    color: #333;
+    color: white;
     font-size: 1rem;
     line-height: 1.6;
 }
@@ -326,14 +326,14 @@ body {
 /* video */
 .video-section {
     padding: 2rem 1rem;
-    background-color: #f5f5f5;
+    background-color: #000000;
     text-align: center;
 }
 
 .video-section .section-title {
     margin-bottom: 1.5rem;
     font-size: 2rem;
-    color: #1abc9c; /* puoi adattare il colore */
+    color: darkgoldenrod; /* puoi adattare il colore */
 }
 
 .video-wrapper {
@@ -361,7 +361,7 @@ body {
 
 .reviews {
     padding: 50px 20px;
-    background: #f5f5f5;
+    background: #000000;
     text-align: center;
 }
 
@@ -373,12 +373,12 @@ body {
 }
 
 .review-card {
-    background: #fff;
+    background: #000000;
     border-radius: 12px;
     padding: 25px 20px;
     box-shadow: 0 6px 15px rgba(240,128,128,0.3);
     font-style: italic;
-    color: #5a2a2a;
+    color: white;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -391,14 +391,14 @@ body {
     display: block;
     margin-top: 15px;
     font-weight: 600;
-    color: #c75c5c;
+    color: white;
 }
 
 /* Sezione contatti */
 .cta {
-    background-color: #1abc9c;
+    background-color: #000000;
     padding: 4rem 2rem;
-    color: black;
+    color: darkgoldenrod;
     text-align: center;
     font-family: 'Poppins', sans-serif;
 
@@ -457,14 +457,14 @@ body {
     margin: 0 0 0.4rem;
     font-size: 1.30rem; /* prima 1.1rem */
     font-weight: 600;
-    color: black;
+    color: darkgoldenrod;
 }
 
 .contact-item p {
     margin: 0;
     font-size: 1.55rem; /* prima 0.95rem */
     line-height: 1.5;   /* leggermente aumentata */
-    color: black;
+    color: darkgoldenrod;
 }
 
 /* --- Responsive da mobile --- */
@@ -587,7 +587,7 @@ body {
 }
 
 .map-section {
-    background-color: #1abc9c;
+    background-color: #000000;
     padding: 3rem 1rem;
     display: flex;
     justify-content: center;
@@ -612,8 +612,8 @@ body {
 
 /* Footer */
 footer {
-    background: #1abc9c;
-    color: #111;
+    background: #000000;
+    color: white;
     text-align: center;
     padding: 2rem 1rem;
 
@@ -623,7 +623,7 @@ footer {
 }
 
 footer a {
-    color: #111;
+    color: white;
     text-decoration: none;
     margin-left: 10px;
     transition: color 0.3s ease;
@@ -631,7 +631,7 @@ footer a {
 
 footer a:hover,
 footer a:focus {
-    color: #111; /* cambia colore al passaggio del mouse */
+    color: white; /* cambia colore al passaggio del mouse */
     text-decoration: underline;
     outline: none;
 }
