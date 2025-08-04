@@ -453,16 +453,16 @@ body {
 
 /* Titoli e testo */
 .contact-item h3 {
-    margin: 0 0 0.3rem;
-    font-size: 1.1rem;
+    margin: 0 0 0.4rem;
+    font-size: 1.65rem; /* prima 1.1rem */
     font-weight: 600;
     color: black;
 }
 
 .contact-item p {
     margin: 0;
-    font-size: 0.95rem;
-    line-height: 1.3;
+    font-size: 1.55rem; /* prima 0.95rem */
+    line-height: 1.5;   /* leggermente aumentata */
     color: black;
 }
 
@@ -474,7 +474,7 @@ body {
     color: #fdf5e6;
 }
 
-/* Form contatti */
+/* Form contatti
 .contact-form {
     max-width: 600px;
     margin: 0 auto;
@@ -509,7 +509,7 @@ body {
     transform: scale(1.02);
 }
 
-/* Pulsante invio */
+
 .contact-form button {
     background-color: #ffffff;
     color: black;
@@ -527,7 +527,7 @@ body {
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(23, 165, 137, 0.7);
 }
-
+*/
 /* Responsive mobile */
 @media (max-width: 768px) {
     .contact-info {
