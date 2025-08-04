@@ -204,6 +204,7 @@ body {
 /* Mobile */
 @media (max-width: 768px) {
     .hero-content {
+        padding-top: 9rem; /* Aggiunto spazio sopra */
         padding-bottom: 3.5rem; /* oppure 15-20vh se serve più spazio */
     }
     .hero h1 {
