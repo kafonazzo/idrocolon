@@ -21,6 +21,14 @@ document.addEventListener("DOMContentLoaded", () => {
         nav.classList.toggle('open');
     });
 
+    // Chiudi menu mobile al click su un link
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            nav.classList.remove('open');
+            menuToggle.classList.remove('active');
+        });
+    });
+
     // ============================
     // COOKIE BANNER
     // ============================
