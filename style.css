@@ -140,6 +140,12 @@ body {
         display: block;
     }
 }
+
+@media (min-width: 768px) {
+    .logo {
+        height: 120px;
+    }
+}
 /* Hero */
 
 .hero {
