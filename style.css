@@ -107,6 +107,21 @@ body {
     user-select: none;
 }
 
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.social-icons a img {
+    height: 24px;
+    width: 24px;
+
+}
+.social-icons a:hover img {
+
+}
+
 /* Mobile styles */
 @media (max-width: 768px) {
     .nav-links {
@@ -139,6 +154,9 @@ body {
     .menu-toggle {
         display: block;
     }
+
+
+
 }
 
 @media (min-width: 768px) {
