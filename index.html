@@ -217,7 +217,8 @@
 
 <section class="cta" id="appuntamento" data-aos="fade-up">
     <h2>Prenota un Appuntamento</h2>
-    <form class="contact-form" action="mailto:davidetoscanos@gmail.com" method="post" enctype="text/plain">
+    <form class="contact-form" action="https://formspree.io/f/xkgzyzwp" method="POST">
+
         <label for="name">Nome e Cognome</label>
         <input type="text" id="name" name="name" required />
 
@@ -234,9 +235,13 @@
         <textarea id="message" name="message" rows="4" placeholder="Es: Vorrei un consulto il lunedì mattina..."></textarea>
 
         <label class="privacy-consent">
-            <input type="checkbox" required />
+            <input type="checkbox" name="privacy" required />
             Ho letto e accetto la <a href="/privacy.html" target="_blank">Privacy Policy</a>
         </label>
+
+        <!-- Campo nascosto per prevenire spam bot -->
+        <input type="hidden" name="_subject" value="Nuova richiesta di appuntamento">
+        <input type="hidden" name="_captcha" value="false">
 
         <button type="submit">Invia Richiesta</button>
     </form>
