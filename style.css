@@ -187,6 +187,7 @@ body {
     }
 
     .nav-links a {
+        font-size: 1.4rem; /* aumenta la dimensione su desktop */
         position: relative;
         color: #d59b13;
         text-decoration: none;
