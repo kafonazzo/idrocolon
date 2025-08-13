@@ -1,32 +1,56 @@
 document.addEventListener("DOMContentLoaded", () => {
-    AOS.init();
+    // ============================
+    // AOS
+    // ============================
+    if (typeof AOS !== "undefined") {
+        AOS.init();
+    }
 
+    // ============================
+    // NAVBAR
+    // ============================
     const navbar = document.getElementById('navbar');
     const menuToggle = document.getElementById('menu-toggle');
     const nav = document.getElementById('nav');
+    let lastScrollY = window.scrollY;
 
-    // Navbar scroll transparency effect
+    // Toggle menu mobile
+    menuToggle.addEventListener('click', () => {
+        nav.classList.toggle('open');
+        menuToggle.classList.toggle('active');
+    });
+
+    // Chiudi menu mobile al click su un link
+    nav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            nav.classList.remove('open');
+            menuToggle.classList.remove('active');
+        });
+    });
+
+    // Scroll: colore navbar + mostra/nascondi
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
+        const currentScroll = window.scrollY;
+
+        // Cambia colore navbar
+        if (currentScroll > 50) {
             navbar.classList.add('scrolled');
             navbar.classList.remove('transparent');
         } else {
             navbar.classList.remove('scrolled');
             navbar.classList.add('transparent');
         }
-    });
 
-    // Toggle menu mobile with animation
-    menuToggle.addEventListener('click', () => {
-        nav.classList.toggle('open');
-    });
+        // Mostra/Nascondi navbar
+        if (currentScroll > lastScrollY && currentScroll > 100) {
+            // Scroll verso il basso → nascondi
+            navbar.style.top = '-120px';
+        } else {
+            // Scroll verso l’alto → mostra
+            navbar.style.top = '0';
+        }
 
-    // Chiudi menu mobile al click su un link
-    document.querySelectorAll('.nav-links a').forEach(link => {
-        link.addEventListener('click', () => {
-            nav.classList.remove('open');
-            menuToggle.classList.remove('active');
-        });
+        lastScrollY = currentScroll;
     });
 
     // ============================
@@ -36,25 +60,22 @@ document.addEventListener("DOMContentLoaded", () => {
     const acceptBtn = document.getElementById('accept-cookies');
 
     if (banner && acceptBtn) {
-        // Controlla se il consenso è già stato dato
         if (localStorage.getItem('cookieAccepted') !== 'true') {
-            // Mostra banner con animazione
-
             setTimeout(() => banner.classList.add('show'), 100);
 
-            // Al click salva consenso e nasconde banner
             acceptBtn.addEventListener('click', () => {
                 localStorage.setItem('cookieAccepted', 'true');
                 banner.classList.remove('show');
                 setTimeout(() => banner.style.display = 'none', 500);
             });
         } else {
-            // Se accettato, assicurati che il banner sia nascosto
             banner.style.display = 'none';
         }
     }
 
-    // Scroll fluido per link interni
+    // ============================
+    // SCROLL FLUIDO PER LINK INTERNI
+    // ============================
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
