@@ -246,8 +246,9 @@ body {
         font-size: 1rem;
     }
     .cta-hero a {
-        width: 80%;
-        font-size: 1rem;
+        width: 70%;          /* meno largo */
+        font-size: 0.9rem;   /* testo più piccolo */
+        padding: 0.6rem 1.4rem; /* meno spazio interno */
     }
 }
 
