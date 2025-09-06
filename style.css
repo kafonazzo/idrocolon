@@ -1,7 +1,7 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #000000;
+    background-color: #ffffff;
     color: #333;
     scroll-behavior: smooth;
 }
@@ -23,7 +23,7 @@ body {
     justify-content: center;
     padding: 15px 20px;
     background-color: rgba(0, 0, 0, 0.8);
-    color: white;
+    color: #023e8a;
     z-index: 9999; /* molto sopra tutto il resto */
     transition: transform 0.3s ease, opacity 0.3s ease;
     opacity: 0;
@@ -78,7 +78,7 @@ body {
 }
 
 .navbar.scrolled {
-    background-color: #000000;
+    background-color: #ffffff;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -93,7 +93,7 @@ body {
 }
 
 .nav-links a {
-    color: #d59b13;
+    color: #4fc3f7;
     text-decoration: none;
     font-weight: 600;
     border-bottom: none !important;
@@ -101,14 +101,14 @@ body {
 }
 
 .nav-links a:hover {
-    color: #e4cbb5;
+    color: #00b4d8;
 }
 
 .menu-toggle {
     display: none;
     font-size: 2rem;
     cursor: pointer;
-    color: darkgoldenrod;
+    color: #0077b6;
 }
 
 /* Hamburger menu icon */
@@ -116,7 +116,7 @@ body {
     display: none;
     font-size: 2rem;
     cursor: pointer;
-    color: white;
+    color: #023e8a;
     user-select: none;
 }
 
@@ -196,7 +196,7 @@ body {
     .nav-links a {
         font-size: 1.4rem; /* aumenta la dimensione su desktop */
         position: relative;
-        color: #d59b13;
+        color: #4fc3f7;
         text-decoration: none;
         font-weight: 600;
         padding: 0.2rem 0;
@@ -205,7 +205,7 @@ body {
 
     /* Glow soffuso */
     .nav-links a:hover {
-        color: #f5d98f;
+        color: #90e0ef;
         text-shadow: 0 0 8px rgba(245, 217, 143, 0.8);
     }
 
@@ -248,7 +248,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: white;
+    color: #023e8a;
     padding: 0 1.5rem;
     z-index: 1;
     overflow: hidden;
@@ -286,15 +286,15 @@ body {
     padding: 0.8rem 1.8rem;
     font-size: 1rem;
     font-weight: 600;
-    background: darkgoldenrod;
-    color: white;
+    background: #0077b6;
+    color: #023e8a;
     border-radius: 30px;
     text-decoration: none;
     transition: all 0.3s ease;
 }
 
 .cta-hero a:hover {
-    background: darkgoldenrod;
+    background: #0077b6;
     transform: translateY(-2px);
 }
 
@@ -337,7 +337,7 @@ body {
 }
 
 .hero-wave path {
-    fill: #000000;
+    fill: #ffffff;
 }
 
 
@@ -353,14 +353,14 @@ body {
 }
 
 .servizi-section {
-    background-color: #000000;
+    background-color: #ffffff;
     padding: 4rem 1.5rem;
 }
 
 .section-title {
     text-align: center;
     font-size: 2.5rem;
-    color: darkgoldenrod;
+    color: #0077b6;
     margin-bottom: 3rem;
 }
 
@@ -393,13 +393,13 @@ body {
 }
 
 .servizio-testo h3 {
-    color: darkgoldenrod;
+    color: #0077b6;
     font-size: 1.8rem;
     margin-bottom: 0.5rem;
 }
 
 .servizio-testo p {
-    color: white;
+    color: #023e8a;
     font-size: 1rem;
     line-height: 1.6;
 }
@@ -417,21 +417,21 @@ body {
 
 .icon-box {
     font-size: 2.5rem;
-    color: #e67e22;
+    color: #00b4d8;
     margin-bottom: 1rem;
 }
 
 /* video */
 .video-section {
     padding: 2rem 1rem;
-    background-color: #000000;
+    background-color: #ffffff;
     text-align: center;
 }
 
 .video-section .section-title {
     margin-bottom: 1.5rem;
     font-size: 2rem;
-    color: darkgoldenrod; /* puoi adattare il colore */
+    color: #0077b6; /* puoi adattare il colore */
 }
 
 .video-wrapper {
@@ -459,7 +459,7 @@ body {
 
 .reviews {
     padding: 50px 20px;
-    background: #000000;
+    background: #ffffff;
     text-align: center;
 }
 
@@ -471,12 +471,12 @@ body {
 }
 
 .review-card {
-    background: #000000;
+    background: #ffffff;
     border-radius: 12px;
     padding: 25px 20px;
     box-shadow: 0 6px 15px rgba(240,128,128,0.3);
     font-style: italic;
-    color: white;
+    color: #023e8a;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -489,14 +489,14 @@ body {
     display: block;
     margin-top: 15px;
     font-weight: 600;
-    color: white;
+    color: #023e8a;
 }
 
 /* Sezione contatti */
 .cta {
-    background-color: #000000;
+    background-color: #ffffff;
     padding: 4rem 2rem;
-    color: darkgoldenrod;
+    color: #0077b6;
     text-align: center;
     font-family: 'Poppins', sans-serif;
 
@@ -555,14 +555,14 @@ body {
     margin: 0 0 0.4rem;
     font-size: 1.30rem; /* prima 1.1rem */
     font-weight: 600;
-    color: darkgoldenrod;
+    color: #0077b6;
 }
 
 .contact-item p {
     margin: 0;
     font-size: 1.55rem; /* prima 0.95rem */
     line-height: 1.5;   /* leggermente aumentata */
-    color: darkgoldenrod;
+    color: #0077b6;
 }
 
 /* --- Responsive da mobile --- */
@@ -600,7 +600,7 @@ body {
     font-size: 2.2rem;
     margin-bottom: 2.5rem;
     font-weight: 600;
-    color: #fdf5e6;
+    color: #0077b6;
 }
 
 /* Form contatti */
@@ -610,6 +610,10 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
+    padding: 2rem;
+    border-radius: 12px;
+    background-color: #f0f8ff; /* azzurro molto chiaro */
+    box-shadow: 0 4px 12px rgba(0, 119, 182, 0.2); /* ombra azzurro medico */
 }
 
 .contact-form input,
@@ -693,7 +697,7 @@ body {
 .social-section h2 {
     font-size: 1.8rem;
     margin-bottom: 2rem;
-    color: darkgoldenrod;
+    color: #0077b6;
 }
 
 .social-logos {
@@ -732,7 +736,7 @@ body {
 }
 
 .map-section {
-    background-color: #000000;
+    background-color: #ffffff;
     padding: 3rem 1rem;
     display: flex;
     justify-content: center;
@@ -741,7 +745,7 @@ body {
 .map-container {
     width: 90%;
     max-width: 920px;
-    background: white;
+    background: #023e8a;
     padding: 1rem;
     border-radius: 12px;
     box-shadow: 0 6px 15px rgba(62, 26, 26, 0.5);
@@ -798,8 +802,8 @@ body {
 
 /* Footer */
 footer {
-    background: #000000;
-    color: white;
+    background: #ffffff;
+    color: #023e8a;
     text-align: center;
     padding: 2rem 1rem;
 
@@ -809,7 +813,7 @@ footer {
 }
 
 footer a {
-    color: white;
+    color: #023e8a;
     text-decoration: none;
     margin-left: 10px;
     transition: color 0.3s ease;
@@ -817,7 +821,7 @@ footer a {
 
 footer a:hover,
 footer a:focus {
-    color: white; /* cambia colore al passaggio del mouse */
+    color: #023e8a; /* cambia colore al passaggio del mouse */
     text-decoration: underline;
     outline: none;
 }
@@ -845,6 +849,6 @@ footer a:focus {
 }
 
 .privacy-consent a {
-    color: white;
+    color: #023e8a;
     text-decoration: underline;
 }
