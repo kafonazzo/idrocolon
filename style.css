@@ -78,12 +78,16 @@ body {
 }
 
 .navbar.scrolled {
-    background-color: #ffffff;
+    background-color: #0077b6;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .logo {
+    width: 80px;        /* assicurati che width = height per avere un cerchio perfetto */
     height: 80px;
+    border-radius: 50%;
+    object-fit: cover;  /* ritaglia l'immagine mantenendo proporzioni */
+    display: inline-block;
 }
 
 .nav-links {
@@ -93,7 +97,7 @@ body {
 }
 
 .nav-links a {
-    color: #4fc3f7;
+    color: #f4f4f4;
     text-decoration: none;
     font-weight: 600;
     border-bottom: none !important;
@@ -101,14 +105,14 @@ body {
 }
 
 .nav-links a:hover {
-    color: #00b4d8;
+    color: #ffffff;
 }
 
 .menu-toggle {
     display: none;
     font-size: 2rem;
     cursor: pointer;
-    color: #0077b6;
+    color: #f5f5f5;
 }
 
 /* Hamburger menu icon */
@@ -116,7 +120,7 @@ body {
     display: none;
     font-size: 2rem;
     cursor: pointer;
-    color: #023e8a;
+    color: #f4f4f4;
     user-select: none;
 }
 
@@ -182,7 +186,8 @@ body {
     }
 
     .logo {
-        height: 120px;
+        height: 115px;
+        width: 115px;
         margin-left: 15rem; /* spostato più a destra */
     }
 
@@ -196,7 +201,7 @@ body {
     .nav-links a {
         font-size: 1.4rem; /* aumenta la dimensione su desktop */
         position: relative;
-        color: #4fc3f7;
+        color: #ffffff;
         text-decoration: none;
         font-weight: 600;
         padding: 0.2rem 0;
@@ -248,7 +253,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #023e8a;
+    color: #f5f5f5;
     padding: 0 1.5rem;
     z-index: 1;
     overflow: hidden;
