@@ -236,7 +236,19 @@
 
 <section class="cta" id="appuntamento" data-aos="fade-up">
     <h2>Prenota un Appuntamento</h2>
-    <form class="contact-form" action="https://formspree.io/f/xkgzyzwp" method="POST">
+    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+
+        <!-- La tua chiave Web3Forms -->
+        <input type="hidden" name="access_key" value="7818f396-0617-47d4-be1b-06fcd0444542" />
+
+        <!-- Destinatari multipli -->
+        <input type="hidden" name="recipients" value="merefabio05@gmail.com,davidetoscanos@gmail.com" />
+
+        <!-- Redirect dopo l'invio -->
+        <input type="hidden" name="redirect" value="https://www.idrocolongenova.it/" />
+
+        <!-- Honeypot antispam -->
+        <input type="text" name="honeypot" style="display:none">
 
         <label for="name">Nome e Cognome</label>
         <input type="text" id="name" name="name" required />
@@ -257,10 +269,6 @@
             <input type="checkbox" name="privacy" required />
             Ho letto e accetto la <a href="/privacy.html" target="_blank">Privacy Policy</a>
         </label>
-
-        <!-- Campo nascosto per prevenire spam bot -->
-        <input type="hidden" name="_subject" value="Nuova richiesta di appuntamento">
-        <input type="hidden" name="_captcha" value="false">
 
         <button type="submit">Invia Richiesta</button>
     </form>

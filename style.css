@@ -145,7 +145,7 @@ body {
 
 
 
-@media (max-width: 1459px) {
+@media (max-width: 1359px) {
     .nav-links {
         position: fixed;
         top: 0;
@@ -177,7 +177,7 @@ body {
 }
 
 /* --- SOLO DESKTOP --- */
-@media (min-width: 1460px) {
+@media (min-width: 1360px) {
     .navbar {
         display: grid;
         grid-template-columns: auto 1fr auto; /* logo | menu | social */
@@ -199,7 +199,7 @@ body {
     }
 
     .nav-links a {
-        font-size: 1.4rem; /* aumenta la dimensione su desktop */
+        font-size: 1rem; /* aumenta la dimensione su desktop */
         position: relative;
         color: #ffffff;
         text-decoration: none;
